@@ -1,0 +1,124 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Profile
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content [fullscreen]="true">
+
+  
+  <ion-breadcrumbs>
+    <ion-breadcrumb href="#">
+      Home
+    </ion-breadcrumb>
+    <ion-breadcrumb href="#electronics">
+      Profile
+    </ion-breadcrumb>
+
+  </ion-breadcrumbs>
+
+
+
+
+  <ion-card>
+    <ion-card-header>
+      <img src="https://s.isanook.com/ca/0/rp/r/w728/ya0xa0m1w0/aHR0cHM6Ly9zLmlzYW5vb2suY29tL2NhLzAvdWQvMjc5LzEzOTg0ODkvNjcxMjQzNTNfMzkxNTY0MDA4Mzc2NTE3XzU5NjUuanBn.jpg" alt="" style="height: 250; width:300px;">
+      <ion-card-subtitle>ประวัติส่วนตัว</ion-card-subtitle>
+      <ion-card-title>นาย จันเจ้า เสาร์อาทิตย์</ion-card-title>
+    </ion-card-header>
+    
+    
+
+    <ion-card-content  >
+      
+      <p>Username:{{profile.Username}}</p>
+      <p>Password:{{profile.Password}}</p>
+       
+    </ion-card-content>
+
+
+  </ion-card>
+
+  <ion-card >
+    <ion-card-content   >
+
+      <ion-card-title>Address</ion-card-title>
+      <p>{{profile.Address}}</p>
+
+    </ion-card-content>
+
+
+    <ion-accordion-group>
+      <ion-accordion value="colors">
+        <ion-item slot="header">
+          <ion-label>ประวัติการศึกษา</ion-label>
+        </ion-item>
+    
+        <ion-list slot="content">
+          <ion-item>
+            <ion-label>อาชีวศีกษา</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>ศรีวิชัย</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>ปลักไม้ลาย</ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-accordion>
+      <ion-accordion value="shapes">
+        <ion-item slot="header">
+          <ion-label>เกรด</ion-label>
+        </ion-item>
+    
+        <ion-list slot="content">
+          <ion-item>
+            <ion-label>3.5</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>3</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>3.5</ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-accordion>
+      <ion-accordion value="numbers">
+        <ion-item slot="header">
+          <ion-label>ผลงาน</ion-label>
+        </ion-item>
+    
+        <ion-list slot="content">
+          <ion-item>
+            <ion-label>1</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>2</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>3</ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-accordion>
+    </ion-accordion-group>
+  </ion-card>
+
+ 
+  
+
+ 
+
+ 
+  
+
+  
+  
+
+  
+</ion-content>
+
+
